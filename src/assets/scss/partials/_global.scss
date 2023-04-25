@@ -1,0 +1,31 @@
+html {
+    box-sizing: border-box;
+    font-size: var(--font-size);
+    @media only screen and (max-width:1440px){
+        font-size: calc(var(--font-size) - 1px);
+    }
+  
+    @media only screen and (max-width:1200px){
+        font-size: calc(var(--font-size) - 2px);
+    }
+}
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: var(--font-family);
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+a{
+    text-decoration: none;
+    transition: all 0.3s ease;
+    color: var(--primary-color);
+}
